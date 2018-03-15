@@ -26,19 +26,19 @@ namespace Chapter8LabInheritance
         }
     }
 
-    public interface Profession
+    public interface IProfession
     {
         void GetName();
         void GetProfession();
     }
 
-    public interface Family
+    public interface IFamily
     {
         void GetMarried();
         void GetChildren();
     }
 
-    class Person : Profession, Family
+    class Person : IProfession, IFamily
     {
         public void GetName()
         {
